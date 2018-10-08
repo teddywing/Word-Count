@@ -11,9 +11,22 @@ script AppDelegate
 	
 	-- IBOutlets
 	property theWindow : missing value
+	property theCharacters : missing value
+	property theWords : missing value
+	property theParagraphs : missing value
 	
 	on applicationWillFinishLaunching_(aNotification)
-		-- Insert code here to initialize your application before any files are opened 
+		tell application "TextEdit"
+			set top_document to document 1
+
+			set l_chars to count characters of top_document
+			set l_words to count words of top_document
+			set l_paragraphs to count paragraphs of top_document
+		end tell
+
+		theCharacters's setStringValue_(l_chars)
+		theWords's setStringValue_(l_words)
+		theParagraphs's setStringValue_(l_paragraphs)
 	end applicationWillFinishLaunching_
 	
 	on applicationShouldTerminate_(sender)
