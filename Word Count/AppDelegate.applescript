@@ -36,5 +36,9 @@ script AppDelegate
 		-- Insert code here to do any housekeeping before your application quits 
 		return current application's NSTerminateNow
 	end applicationShouldTerminate_
-	
+
+    on applicationShouldTerminateAfterLastWindowClosed_(sender)
+        return YES
+    end applicationShouldTerminateAfterLastWindowClosed_
+
 end script
