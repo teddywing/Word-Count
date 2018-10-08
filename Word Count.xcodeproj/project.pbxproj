@@ -10,7 +10,6 @@
 		D1CDDCEA216BA28500F66C15 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CDDCE9216BA28500F66C15 /* AppleScriptObjC.framework */; };
 		D1CDDCED216BA28500F66C15 /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = D1CDDCEC216BA28500F66C15 /* AppDelegate.applescript */; };
 		D1CDDCEF216BA28500F66C15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CDDCEE216BA28500F66C15 /* Assets.xcassets */; };
-		D1CDDCF2216BA28500F66C15 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1CDDCF0216BA28500F66C15 /* MainMenu.xib */; };
 		D1CDDCF5216BA28500F66C15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CDDCF4216BA28500F66C15 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -19,7 +18,6 @@
 		D1CDDCE9216BA28500F66C15 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
 		D1CDDCEC216BA28500F66C15 /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
 		D1CDDCEE216BA28500F66C15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D1CDDCF1216BA28500F66C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D1CDDCF3216BA28500F66C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1CDDCF4216BA28500F66C15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +64,6 @@
 			children = (
 				D1CDDCEC216BA28500F66C15 /* AppDelegate.applescript */,
 				D1CDDCEE216BA28500F66C15 /* Assets.xcassets */,
-				D1CDDCF0216BA28500F66C15 /* MainMenu.xib */,
 				D1CDDCF3216BA28500F66C15 /* Info.plist */,
 				D1CDDCF4216BA28500F66C15 /* main.m */,
 			);
@@ -114,7 +111,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = D1CDDCDD216BA28400F66C15;
 			productRefGroup = D1CDDCE7216BA28400F66C15 /* Products */;
@@ -132,7 +128,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1CDDCEF216BA28500F66C15 /* Assets.xcassets in Resources */,
-				D1CDDCF2216BA28500F66C15 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,17 +144,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		D1CDDCF0216BA28500F66C15 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D1CDDCF1216BA28500F66C15 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D1CDDCF6216BA28500F66C15 /* Debug */ = {
@@ -210,7 +194,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -259,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -273,6 +257,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Word Count/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teddywing.Word-Count";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -286,6 +271,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Word Count/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teddywing.Word-Count";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
