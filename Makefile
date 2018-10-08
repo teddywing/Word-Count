@@ -18,3 +18,7 @@ archive: clean-release release
 		-archivePath build/Release.xcarchive \
 		-exportOptionsPlist export-options.plist \
 		-exportPath build
+
+zip: archive
+	cd build; \
+	zip -r 'Word Count.zip' 'Word Count.app'
