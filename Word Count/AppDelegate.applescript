@@ -11,7 +11,7 @@ script AppDelegate
 	
 	-- IBOutlets
 	property theWindow : missing value
-    property fileName : missing value
+	property fileName : missing value
 	property theCharacters : missing value
 	property theWords : missing value
 	property theParagraphs : missing value
@@ -20,13 +20,13 @@ script AppDelegate
 		tell application "TextEdit"
 			set top_document to document 1
 
-            set l_name to name of top_document
+			set l_name to name of top_document
 			set l_chars to count characters of top_document
 			set l_words to count words of top_document
 			set l_paragraphs to count paragraphs of top_document
 		end tell
 
-        fileName's setStringValue_(l_name)
+		fileName's setStringValue_(l_name)
 		theCharacters's setStringValue_(l_chars)
 		theWords's setStringValue_(l_words)
 		theParagraphs's setStringValue_(l_paragraphs)
@@ -37,8 +37,8 @@ script AppDelegate
 		return current application's NSTerminateNow
 	end applicationShouldTerminate_
 
-    on applicationShouldTerminateAfterLastWindowClosed_(sender)
-        return YES
-    end applicationShouldTerminateAfterLastWindowClosed_
+	on applicationShouldTerminateAfterLastWindowClosed_(sender)
+		return YES
+	end applicationShouldTerminateAfterLastWindowClosed_
 
 end script
